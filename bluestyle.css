@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+#calculator {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(0, 0, 51); /* Dark blue background */
+  border-radius: 18px;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+#display {
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
+  text-align: right;
+  border: none;
+  background-color: rgb(0, 0, 102); /* Darker blue for display background */
+  color: white; /* White text */
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Circular buttons */
+  border: none;
+  background-color: rgb(0, 0, 51); /* Dark blue */
+  color: white; /* White text */
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 102); /* Darker blue on hover */
+}
+
+button:active {
+  background-color: rgb(0, 0, 77); /* Dark blue when pressed */
+}
+
+.operator-btn {
+  background-color: rgb(0, 102, 204); /* Blue for operator buttons */
+}
+
+.operator-btn:hover {
+  background-color: rgb(0, 77, 153); /* Darker blue on hover */
+}
+
+.operator-btn:active {
+  background-color: rgb(0, 89, 179); /* Slightly lighter blue when active */
+}
